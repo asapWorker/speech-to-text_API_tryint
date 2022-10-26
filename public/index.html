@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>lab1</title>
+</head>
+<body>
+  <div class="app-container">
+
+    <form class="form">
+      <input type="file" name="input-audio" id="audio">
+      <label class="input-audio" for="audio">
+        <object class="load-icon" type="image/svg+xml" data="load.svg">
+          Your browser does not support SVG
+        </object>
+        <span id="input-text" class="input-text">выберите аудио файл</span>
+      </label>
+
+      <div id="buttons-container" class="buttons-container">
+        <input type="button" value="Yandex SpeechKit" name="yandex" class="btn-service">
+        <input type="button" value="Houndify" name="houndify" class="btn-service">
+        <input type="button" value="Rapid Rev.AI" name="revAI" class="btn-service">
+      </div>
+
+    </form>
+
+    <div class="result-container">
+      <div class="service-name" id="result-service-name">пока нет никакого результата</div>
+      <div class="result" id="result-area"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
